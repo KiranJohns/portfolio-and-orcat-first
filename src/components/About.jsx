@@ -30,21 +30,20 @@ const About = () => {
     
    <>
    <motion.div variants={textVariant()}>
-    <p className={styles.sectionSubText}>
+    {/* <p className={styles.sectionSubText}>
       Introduction
-      </p>
+      </p> */}
      <h2 className={styles.sectionHeadText}>
-      Overview.
+     About
       </h2>  
    </motion.div>
 
-   <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w-4xl leading-[30px] '>
-   I am an experienced and versatile professional with a passion for designing and developing high-quality 
-   websites that meet the unique needs of my clients. With a solid background in web development, I have the technical 
-   skills and knowledge required to create responsive, user-friendly, and visually appealing websites.
-   As a web developer, I craft digital experiences that go beyond just pretty pixels. 
-   I specialize in turning complex problems into elegant solutions, 
-   and I'm always on the hunt for new challenges to tackle.
+   <motion.p variants={fadeIn("", "", 0.1, 1)}  style={{ width: '100%',  wordBreak:'break-word', whiteSpace: 'normal'}}  className='mt-4 text-secondary text-[17px] max-w-4xl leading-[30px] ' >
+   Welcome to ORCAT: OmniResource for Creative Application Technologies. We are a team of experienced and versatile professionals dedicated to designing and developing high-quality websites tailored to meet the unique needs of our clients. With a solid background in web development, our team possesses the technical skills and knowledge required to create responsive, user-friendly, and visually appealing websites.
+<br/><br/>
+At ORCAT, we specialize in crafting digital experiences that go beyond just attractive designs. Our expertise lies in transforming complex problems into elegant solutions, ensuring that each project we undertake is both functional and aesthetically pleasing. We are passionate about innovation and constantly seek new challenges to tackle, aiming to deliver exceptional results that exceed expectations.
+<br/><br/>
+Whether you need a simple website or a complex web application, ORCAT is your go-to partner for creative application technologies. Let us help you bring your vision to life with our comprehensive web development services.
    </motion.p>
    <div className='mt-20 flex flex-wrap gap-10 '>
     {services.map((service, index) => (

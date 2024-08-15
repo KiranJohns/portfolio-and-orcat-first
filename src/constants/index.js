@@ -42,19 +42,19 @@
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Websites",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Mobile Apps",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "UI/UX Design",
       icon: backend,
     },
     {
-      title: "Tech Enthusiast",
+      title: "Digital Marketing",
       icon: creator,
     },
   ];
@@ -116,39 +116,63 @@
   
   const experiences = [
     {
-      title: "Web Developer Intern",
-      company_name: "Brototype",
+      title: "Expert Team of Professionals",
+      company_name: "",
       icon: starbucks,
       iconBg: "#383E56",
-      date: "Aug 2022 - Nov 2022",
+      date: "",
       points: [
-        "Developing and maintaining web applications using Html,CSS, JavaScript and other related technologies.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-        "Testing the web application to ensure that it was working correctly, performing optimally, and was user-friendly."
+        "ORCAT boasts a team of experienced and versatile professionals with a solid background in web development, ensuring high-quality, reliable, and innovative solutions for every project."
       ],
     },
     {
-      title: "Jr. Front-End Developer",
-      company_name: "Liexa Creations",
+      title: "Customized Solutions",
+      company_name: "",
       icon: tesla,
       iconBg: "#E6DEDD",
-      date: "Dec 2022 - Feb 2023",
+      date: "",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "We tailor our web development services to meet the unique needs and goals of each client, ensuring a personalized approach that delivers exactly what you need.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "FreeLance",
+      title: "Technical Proficiency",
+      company_name: "",
       icon: shopify,
       iconBg: "#383E56",
-      date: "Feb 2023 - Present",
+      date: "",
       points: [
-        "Develop and maintain responsive and user-friendly websites: You will be responsible for developing high-quality and visually appealing websites that are optimized for various devices and screen sizes. This involves working with HTML, CSS, JavaScript libraries and frameworks to create layouts, styles, and interactivity.",
-       
+        "Our team is proficient in the latest technologies and development frameworks, enabling us to create responsive, user-friendly, and visually appealing websites." 
+      ],
+    },
+    {
+      title: "Innovative Design",
+      company_name: "",
+      icon: shopify,
+      iconBg: "#383E56",
+      date: "",
+      points: [
+        "We specialize in crafting digital experiences that go beyond just attractive designs. Our focus is on creating functional and aesthetically pleasing websites that engage users." 
+      ],
+    },
+    {
+      title: "Support and Maintenance",
+      company_name: "",
+      icon: shopify,
+      iconBg: "#383E56",
+      date: "",
+      points: [
+        "Our relationship with clients doesn’t end at launch. We provide ongoing support and maintenance services to keep your website running smoothly and up-to-date." 
+      ],
+    },
+    {
+      title: "Competitive Pricing",
+      company_name: "",
+      icon: shopify,
+      iconBg: "#383E56",
+      date: "",
+      points: [
+        "We offer competitive pricing for our services without compromising on quality, making professional web development accessible to businesses of all sizes." 
       ],
     },
     // {
@@ -185,10 +209,10 @@
     // },
     {
       testimonial:
-        "Working with Kiran was an absolute pleasure. They were professional, responsive, and delivered exceptional results. I would highly recommend them to anyone looking for a reliable web developer",
-      name: "Sreeni KS",
-      designation: "Designer",
-      company: "Travancore Analytics",
+        "Working with ORCAT was an absolute pleasure. Their team was professional, responsive, and delivered exceptional results. I would highly recommend ORCAT to anyone looking for reliable web development services",
+      name: "Learn for Care",
+      designation: "",
+      company: "E-Learning Platform",
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];

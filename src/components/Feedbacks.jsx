@@ -16,10 +16,10 @@ className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full">
  <div className="mt-7 flex justify-between items-center gap-1">
    <div className="flex-1 flex flex-col">
       <p className="font-medium text-[16px]">
-        <span className="blue-text-gradient">@ </span>{name}
+        <span className="blue-text-gradient"></span>{name}
       </p>
       <p className="mt-2 text-secondary text-[12px]">
-        <span>{designation}</span><span className="text-yellow-300"> @</span>  {company}
+        <span>{designation}</span><span className="text-yellow-300"> </span>  {company}
       </p>
    </div>
  </div>
@@ -30,7 +30,7 @@ className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full">
 const Feedbacks = () => {
   return (
     <div className="mt-12 bg-black-100 rounded-[20px]">
-      <div className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}>
+      <div className={`${styles.padding} bg-tertiary rounded-2xl `}>
         <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>What others say</p>
         <h2 className={styles.sectionHeadText}>Testimonials</h2>

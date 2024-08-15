@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 import {styles} from '../styles'
 import { navLinks } from '../constants'
-import {logo2, logo, menu, close} from '../assets'
+import {logo2, logo, menu, close, orca} from '../assets'
 
 
 const Navbar = () => {
@@ -16,9 +16,9 @@ const Navbar = () => {
          onClick={()=>{setActive("");
          window.scrollTo(0,0);
          }} >
-            <img src={logo2} alt="logo" className="w-9 h-9 object-contain" />
-            <p className='text-white text-[17px] font-bold cursor-pointer flex'>Kiran Johnson &nbsp;
-            <span className='md:block hidden'>|Full Stack Developer</span></p>
+            <img src={orca} alt="logo" className="w-9 h-9 object-contain" />
+            <p className='text-white text-[17px] font-bold cursor-pointer flex'>ORCA&nbsp;
+            <span className='md:block hidden'>Technologies</span></p>
          </Link>
        <ul className='list-none hidden sm:flex flex-row gap-10'>
         {navLinks.map((link)=>(

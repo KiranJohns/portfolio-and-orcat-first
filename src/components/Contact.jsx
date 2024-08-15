@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, Suspense } from "react";
 import { motion } from "framer-motion" ;
 import emailjs from "@emailjs/browser";
 
@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import Alert from "./Alert";
 
 // template_005nxdk
 // service_sup5425
@@ -14,56 +15,69 @@ import { slideIn } from "../utils/motion";
 
 const Contact = () => {
   
-  const formRef=useRef();
+  const formRef=useRef(null);
 
-  const [form, setForm] = useState({
-    name: "",
-    email:"",
-    message:"",
-  });
-  
-  const [loading, setLoading]=useState(false);
+  const [form, setForm] = useState({ name: '', email: '', message: '' })
+  const [isloading, setIsLoading] = useState(false)
+  const [currentAnimation, setCurrentAnimation] = useState('idle')
+  const {alert, showAlert, hideAlert} = useAlert()
 
-  const handleChange=(e)=>{
-    const { target } = e;
-    const { name, value } = target;
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value })
+  }
+  const handleFocus = () => { setCurrentAnimation('walk')}
 
-    setForm({
-      ...form,
-      [name]: value,
-    });
-  };
+  const handleBlur = () => { setCurrentAnimation('idle')}
+
+
  
   const handleSumbit = (e)=>{
     e.preventDefault();
-    setLoading(true);
+    setIsLoading(true)
+    setCurrentAnimation('hit')
+ 
 
+    
+      
     emailjs.send(
-    'service_sup5425', 
-    'template_005nxdk',
-    {
-      from_name: form.name,
-      to_name: 'Kiran',
-      from_email: form.email,
-      to_email:'mekiranjohnson@gmail.com',
-      message: form.message,
-    },
-   ' NP7FdfWpmJH1Z5shG'
-    )
-    .then(()=>{
-      setLoading(false);
-      alert('Thamk You, I will get back to you as soon as possible.');
-
-      setForm({
-        name: "",
-        email:"",
-        message:"",
+      "service_xu1taam",
+      "template_zodn1gc",
+ 
+      {
+        from_name:form.name,
+        to_name:"Kiran",
+        from_email:form.email,
+        to_email:'mekiranjohnson@gmail.com',
+        message:form.message
+      },
+  
+      "NP7FdfWpmJH1Z5shG",
+    ).then(()=>{
+      setIsLoading(false);
+      showAlert({
+        show:true, 
+        text:'Message sent successfully!',
+        type:'Success'
       })
-    },
-    (error)=>{
-      setLoading(false);
+      
+      setTimeout(() => {
+        hideAlert();
+        setCurrentAnimation('idle')
+        setForm({name: '', email: '', message:''})
+      }, [3000]);
+    
+     
+    })
+    .catch((error)=>{
+      setIsLoading(false)
+      setCurrentAnimation('idle')
+      showAlert({
+        show: true, 
+        text: 'Message not sent',
+        type: 'danger'
+      })
       console.log(error);
-      alert('Something went wrong')
+     
     })
   }
 
@@ -127,7 +141,7 @@ const Contact = () => {
  font-bold shadow-md shadow-primary rounded-xl
  "
  >
-  {loading ? 'Sending' : 'Send'}
+  {isloading ? 'Sending' : 'Send'}
  </button>
 
 </form>
