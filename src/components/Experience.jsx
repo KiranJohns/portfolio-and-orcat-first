@@ -25,6 +25,8 @@ const ExperienceCard=({experience})=>{
       <h3 className="text-white text-[24px] font-bold">
        { experience.title}
       </h3>
+      <img className="exp-img mb-3" src={experience.img} alt={experience.title} />
+      <span className="text-blue-400"><a href={experience?.link} target="_blank" rel="noopener noreferrer"><h6>Live link</h6></a></span>
       <p className="text-secondary text-[16px] font-semibold" style={{margin:0}}>{experience.company_name}</p>
     </div>
      <ul className="mt-5 list-disc ml-5 space-y-2">
@@ -42,15 +44,15 @@ const ExperienceCard=({experience})=>{
 const Experience = () => {
   return (
     <>
-    <motion.div variants={textVariant()}>
+    <div variants={textVariant()}>
       <p className={styles.sectionSubText}>
-      What have I done so far
+      What we have done so far
       </p>
 
      <h2 className={styles.sectionHeadText}>
       Work Experience.
       </h2>  
-    </motion.div>
+    </div>
 
     <div className="mt-20 flex flex-col">
      <VerticalTimeline >

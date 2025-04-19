@@ -8,6 +8,11 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import orca from "./orca.png";
+import work1 from './work-1.jpg'
+import work2 from './work-2.jpg'
+import work3 from './work-3.jpg'
+import work4 from './work-4.jpg'
+import work5 from './work-5.jpg'
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -62,5 +67,10 @@ export {
   carrent,
   jobit,
   tripguide,
-  orca
+  orca,
+  work1,
+  work2,
+  work3,
+  work4,
+  work5
 };

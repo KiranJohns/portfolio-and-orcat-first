@@ -54,28 +54,14 @@ const Contact = () => {
       "NP7FdfWpmJH1Z5shG",
     ).then(()=>{
       setIsLoading(false);
-      showAlert({
-        show:true, 
-        text:'Message sent successfully!',
-        type:'Success'
-      })
+     alert('Thank You. I will get back to you as soon as possible')
       
-      setTimeout(() => {
-        hideAlert();
-        setCurrentAnimation('idle')
-        setForm({name: '', email: '', message:''})
-      }, [3000]);
-    
+     setForm({name: '', email: '', message:''})
      
     })
     .catch((error)=>{
       setIsLoading(false)
-      setCurrentAnimation('idle')
-      showAlert({
-        show: true, 
-        text: 'Message not sent',
-        type: 'danger'
-      })
+     alert('Something went wrong')
       console.log(error);
      
     })

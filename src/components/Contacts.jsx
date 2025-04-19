@@ -33,8 +33,8 @@ const Contacts = () => {
 
     emailjs
       .send(
-        'service_sup5425', 
-        'template_005nxdk',
+      "service_xu1taam",
+      "template_zodn1gc",
         {
           name: form.name,
           // to_name: "Kiran",
@@ -42,7 +42,7 @@ const Contacts = () => {
           // to_email: "kiranjohnson0@gmail.com",
           message: form.message,
         },
-        ' NP7FdfWpmJH1Z5shG'
+        'NP7FdfWpmJH1Z5shG'
       )
       .then(
         () => {

@@ -23,6 +23,11 @@
     jobit,
     tripguide,
     threejs,
+    work1,
+    work2,
+    work3,
+    work4,
+    work5
   } from "../assets";
   
   export const navLinks = [
@@ -116,8 +121,10 @@
   
   const experiences = [
     {
-      title: "Expert Team of Professionals",
+      title: "LEARN FOR CARE",
       company_name: "",
+      img: work5,
+      link:"https://learnforcare.co.uk/",
       icon: starbucks,
       iconBg: "#383E56",
       date: "",
@@ -126,8 +133,10 @@
       ],
     },
     {
-      title: "Customized Solutions",
+      title: "ASTRA NOVA CAREERS",
       company_name: "",
+      img: work1,
+      link:"https://www.astranova.co.in/",
       icon: tesla,
       iconBg: "#E6DEDD",
       date: "",
@@ -136,9 +145,11 @@
       ],
     },
     {
-      title: "Technical Proficiency",
+      title: "VARF",
       company_name: "",
       icon: shopify,
+      img: work4,
+      link:"https://varf.vercel.app/",
       iconBg: "#383E56",
       date: "",
       points: [
@@ -146,9 +157,11 @@
       ],
     },
     {
-      title: "Innovative Design",
+      title: "ADEN DIGITAL SIGNANGE",
       company_name: "",
       icon: shopify,
+      link:"https://www.adendigital.in/",
+      img: work3,
       iconBg: "#383E56",
       date: "",
       points: [
@@ -156,25 +169,27 @@
       ],
     },
     {
-      title: "Support and Maintenance",
+      title: "ALUVA AGENCIES",
       company_name: "",
       icon: shopify,
+      link:"https://www.aluvaagencies.com/",
+      img: work2,
       iconBg: "#383E56",
       date: "",
       points: [
         "Our relationship with clients doesn’t end at launch. We provide ongoing support and maintenance services to keep your website running smoothly and up-to-date." 
       ],
     },
-    {
-      title: "Competitive Pricing",
-      company_name: "",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "",
-      points: [
-        "We offer competitive pricing for our services without compromising on quality, making professional web development accessible to businesses of all sizes." 
-      ],
-    },
+    // {
+    //   title: "Competitive Pricing",
+    //   company_name: "",
+    //   icon: shopify,
+    //   iconBg: "#383E56",
+    //   date: "",
+    //   points: [
+    //     "We offer competitive pricing for our services without compromising on quality, making professional web development accessible to businesses of all sizes." 
+    //   ],
+    // },
     // {
     //   title: "Full stack Developer",
     //   company_name: "Meta",
